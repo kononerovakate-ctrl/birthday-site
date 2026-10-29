@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>С днём рождения, Мишка Барни</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Canvas для салюта -->
+  <canvas id="fireworks"></canvas>
+
+  <main class="card">
+
+    <!-- ===== ЗАГОЛОВОК + КОЛЛАЖ (наслоение) ===== -->
+    <section class="hero-wrap">
+
+      <!-- Коллаж — слева -->
+      <div class="hero-image">
+        <img src="img/hero.png" alt="Коллаж с Мишкой">
+      </div>
+
+      <!-- Заголовок — справа, поверх коллажа -->
+      <h1 class="title fancy-title">
+        <span class="line">С днём рождения,</span>
+        <span class="line name">Мишка Барни</span>
+      </h1>
+
+    </section>
+    <!-- ===== МЕМ + ПОДПИСЬ ===== -->
+    <section class="meme-block">
+      <img src="img/meme.jpg" alt="Дора-дора-помидора" class="meme-img">
+      <p class="meme-caption">
+        Надеюсь, ты станешь супер крутым следователем,<br>
+        и я буду всем хвастаться, какой у меня крутой мэн 🤙
+      </p>
+    </section>
+    <!-- Блок «Почему Илья самый лучший?» -->
+    <section class="why-best">
+      <h2 class="why-title">Почему Илья самый лучший?</h2>
+      <ol class="why-list">
+        <li>Илья самый добрый</li>
+        <li>Илья очень умный</li>
+        <li>Илья очень крутой</li>
+        <li>Илья, Илья, Илюша — буду я твоей игрушкой</li>
+        <li>Илья очень любит чикенбургеры</li>
+        <li>Илья самый-самый красивый!!!</li>
+        <li>Илья очень заботливый</li>
+        <li>Илья умеет быть очень серьёзным</li>
+        <li>Илья очень любит Катю</li>
+        <li>Илья — моя котость, сладость, вкусность, приятность</li>
+      </ol>
+    </section>
+
+    <!-- Блок «Воспоминания» + карусель -->
+    <section class="moments">
+      <p class="greeting">Воспоминания</p>
+
+      <div class="carousel">
+        <button class="carousel-btn prev" id="prevBtn" aria-label="Назад">‹</button>
+
+               <div class="carousel-track" id="track">
+          <div class="carousel-slide tall"><img src="img/photo1.jpg" alt=""></div>
+          <div class="carousel-slide wide"><img src="img/photo2.jpg" alt=""></div>
+          <div class="carousel-slide wide"><img src="img/photo3.jpg" alt=""></div>
+          <div class="carousel-slide wide"><img src="img/photo4.jpg" alt=""></div>
+          <div class="carousel-slide tall"><img src="img/photo5.jpg" alt=""></div>
+          <div class="carousel-slide tall"><img src="img/photo6.jpg" alt=""></div>
+          <div class="carousel-slide wide"><img src="img/photo7.jpg" alt=""></div>
+          <div class="carousel-slide tall"><img src="img/photo8.jpg" alt=""></div>
+          <div class="carousel-slide wide"><img src="img/photo9.jpg" alt=""></div>
+          <div class="carousel-slide tall"><img src="img/photo10.jpg" alt=""></div>
+          <div class="carousel-slide wide"><img src="img/photo11.jpg" alt=""></div>
+        </div>
+
+        <button class="carousel-btn next" id="nextBtn" aria-label="Вперёд">›</button>
+      </div>
+
+      <div class="carousel-dots" id="dots"></div>
+    </section>
+    <section class="moments">
+      
+
+      <div class="carousel">
+        <button class="carousel-btn prev" id="videoPrevBtn" aria-label="Назад">‹</button>
+
+        <div class="carousel-track" id="videoTrack">
+          <div class="carousel-slide">
+            <video src="video/video1.mp4" muted autoplay loop playsinline preload="metadata"></video>
+          </div>
+          <div class="carousel-slide">
+            <video src="video/video2.mp4" muted autoplay loop playsinline preload="metadata"></video>
+          </div>
+          <div class="carousel-slide">
+            <video src="video/video3.mp4" muted autoplay loop playsinline preload="metadata"></video>
+          </div>
+        </div>
+
+        <button class="carousel-btn next" id="videoNextBtn" aria-label="Вперёд">›</button>
+      </div>
+
+      <div class="carousel-dots" id="videoDots"></div>
+    </section>
+    
+    <section class="letter-box">
+      <p class="letter-text">
+        Илья, спасибо тебе большое за любовь, заботу, которую ты мне даришь каждый день.
+        Я безумно сильно рада, что мы познакомились. Спасибо тебе за то, что ты есть.
+        Хочу, чтобы у тебя в жизни всё получалось!
+      </p>
+    </section>
+
+    <!-- Подпись с эффектом печатной машинки -->
+    <p class="signature">
+      <span id="typed-text"></span><span class="cursor">|</span>
+    </p>
+
+  
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
